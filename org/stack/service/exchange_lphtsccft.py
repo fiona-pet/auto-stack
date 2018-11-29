@@ -6,6 +6,8 @@
 
 
 class ExchangeLphtsccft:
+    PASSWORD = '850210'
+    HOME_TABS = {'交易': 'com.lphtsccft:id/rb_trade'}
 
     def buy(self):
         """
