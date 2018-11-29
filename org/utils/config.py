@@ -4,7 +4,7 @@ from configparser import ConfigParser
 
 
 class Config:
-    CNF_PATH = "desired_caps.ini"
+    CNF_PATH = "auto.ini"
     conf: ConfigParser = None
 
     def __init__(self):
@@ -15,3 +15,6 @@ class Config:
 
     def get(self, sections, key):
         return self.conf.get(sections, key)
+
+    def get_android(self, key):
+        return self.get('android', key)
